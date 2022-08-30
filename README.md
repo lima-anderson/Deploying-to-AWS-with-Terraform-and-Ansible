@@ -6,9 +6,9 @@ Criação de uma configuração de rede completa com VPCs, subnets, security gro
 
 **Implementação de recursos da VPC e dos componentes básicos de rede na AWS:**
 
-- Persistência do arquivo de estado do Terraform no S3 Back End
-- Configuração de múltiplos provedores aws
+- Persistência do arquivo de estado do Terraform no S3 Back End com bloqueio de estado;
+- Configuração de múltiplos provedores aws;
 - Configuração de rede:
     - VPCs, internet gateways, subnets; 
     - emparelhamento de VPCs multirregionais;
-    - security groups
+    - security groups.
