@@ -111,7 +111,6 @@ resource "aws_subnet" "subnet_2" {
   cidr_block        = "10.0.2.0/24"
 }
 
-
 #Create subnet in us-west-2
 resource "aws_subnet" "subnet_1_oregon" {
   provider   = aws.region-worker
@@ -145,7 +144,6 @@ resource "aws_main_route_table_association" "set-worker-default-rt-assoc" {
   vpc_id         = aws_vpc.vpc_uswest.id
   route_table_id = aws_route_table.internet_route_oregon.id
 }
-
 
 #Create SG for allowing TCP/8080 from * and TCP/22 from your IP in us-east-1
 resource "aws_security_group" "jenkins-sg" {
